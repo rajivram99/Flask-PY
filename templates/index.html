@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <div>HelloApp: <a href="/">Home</a></div>
+        <hr>
+        {% if username %}
+        <h1>hello {{username}}!</h1>
+        {% else %}
+        <h1>hello World!!</h1>
+        {% endif %}
+
+        {% for i in users %}
+        <li> {{i}} </li>
+        {% endfor %}
+
+    </body>
+</html>
