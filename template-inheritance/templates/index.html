@@ -1,0 +1,19 @@
+<html>
+    <head>
+        {% if title %}
+        <title> {{ title }} </title>
+        {% else %}
+        <title>Welcome to Template inheritance</title>
+        {% endif %}
+    </head>
+    <body>
+        {% extends 'base.html' %}
+            {% block content %}
+                {% if user %} 
+                    <h1> hello {{user}} </h1>
+                {% else %} 
+                    <h1> hello world</h1>
+                {% endif %}
+            {% endblock %}
+    </body>
+</html>
