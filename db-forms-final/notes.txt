@@ -1,0 +1,10 @@
+from _typeshed import FileDescriptorLike
+
+
+helloapp is the main folder name where all the sub folders are present
+
+helloapp
+    -templates
+        -html Files 
+    -db and python files 
+    
